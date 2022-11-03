@@ -7,7 +7,10 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack",
-    "start": "webpack serve --hot"
+    "start": "webpack serve --hot",
+    "firebase": "yarn build && cp dist/* out/",
+    "firebase-deploy": "yarn firebase && node_modules/.bin/firebase deploy --only hosting",
+    "firebase-emul": "yarn firebase && node_modules/.bin/firebase emulators:start"
   },
   "dependencies": {
     "webpack": "^5.74.0",
@@ -17,6 +20,7 @@
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^5.0.1",
     "file-loader": "^6.2.0",
+    "firebase-tools": "^11.16.0",
     "html-webpack-plugin": "^5.5.0",
     "style-loader": "^2.0.0",
     "webpack-dev-server": "^4.11.1"

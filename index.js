@@ -10,7 +10,7 @@ let posting = false
 let i = 0
 
 bAdd.addEventListener("click", async () => {
-  await uploadfile()
+  await queueUploadRequest()
 })
 
 const postData = async (payload, bar) => {
@@ -34,7 +34,7 @@ const postData = async (payload, bar) => {
   req.send(payload)
 }
 
-const uploadfile = async () => {
+const queueUploadRequest = async () => {
   const fileField = document.querySelector('input[type="file"]')
 
   if (!fileField.files || fileField.files.length === 0) {
