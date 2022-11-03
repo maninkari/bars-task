@@ -1,0 +1,44 @@
+body {
+  font-family: "Verdana";
+  color: #333333;
+}
+
+.buttons > * {
+  padding: 0.25rem 0.35rem;
+  /* float: left; */
+  margin: 0.25rem;
+}
+
+.buttons p {
+  color: black;
+}
+
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: stretch;
+}
+
+.wrapper > * {
+  margin: 1rem;
+}
+
+.twothirds {
+  flex-basis: 66%;
+}
+
+.one {
+  text-align: center;
+  flex-basis: 100%;
+}
+
+.onethird {
+  flex-basis: 32%;
+}
+
+.half {
+  flex-basis: 49%;
+  /* display: none; */
+}
