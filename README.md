@@ -2,4 +2,4 @@
 
 to run the app run `yarn && yarn start`
 
-select a file and click the `Add` button
+then select a file and click the `Add` button afterwards
